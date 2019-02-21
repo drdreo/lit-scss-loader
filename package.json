@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/drdreo/lit-scss-loader/issues"
   },
-  "main": "index.js",
+  "main": "dist/lit-scss-loader.js",
   "scripts": {
     "test": "jasmine-ts \"./tests/**/*.spec.ts\" ",
     "build": "webpack"
@@ -43,7 +43,9 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "clean-css": "^4.2.1",
-    "json5": "^2.1.0"
+    "clean-css": "^4.2.1"
+  },
+  "peerDependencies": {
+    "webpack":"^4.29.5"
   }
 }
