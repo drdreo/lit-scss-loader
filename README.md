@@ -10,21 +10,22 @@
 </div>
 
 <blockquote>
-It is a fork of [polymer-css-loader](https://github.com/superjose/polymer-css-loader)! But since the loader was only developed for polymer. I adopted it for lit-element. This is still a work in progress. While this may have worked well on my windows machine, there may still be unforeseen bugs and the API may change in the future.
+It is a fork of polymer-css-loader! But since the loader was only developed for polymer. I adopted it for lit-element. This is still a work in progress. While this may have worked well on my windows machine, there may still be unforeseen bugs and the API may change in the future.
 </blockquote>
 
 # lit-scss-loader
 A loader for webpack that lets you import the CSS/SCSS into your lit-element and automatically creates the styling JavaScript for you.
 
-# Install:
+## Install:
 ```
-npm i -D lit-scss-loader extract-loader
+npm install save-dev lit-scss-loader extract-loader
 ```
 
 
-# Requirements
+## Requirements
 * LitElement
-* Webpack 4 (Tested, could work with earlier versions)
+* Webpack 4
+* extract-loader
 
 # How this works:
 1. Include it in your Webpack Config. Include it "last" or after all the loaders. You will need to use extract-loader if you're using sass-loader, less-loader and/or css-loader
