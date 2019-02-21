@@ -1,0 +1,46 @@
+{
+  "name": "lit-scss-loader",
+  "version": "0.0.1",
+  "description": "Automatically generate the JavaScript style that is required for LitElement, simply by importing the CSS/SCSS file",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-ts \"./tests/**/*.spec.ts\" ",
+    "build": "webpack"
+  },
+  "keywords": [
+    "lit",
+    "webcomponents",
+    "scss",
+    "webpack",
+    "loader",
+    "automatic"
+  ],
+  "author": "Andreas Hahn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drdreo/lit-scss-loader/issues"
+  },
+  "homepage": "https://github.com/drdreo/lit-scss-loader#readme",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.8",
+    "@types/node": "^10.5.2",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "17.0.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.9.1",
+    "jasmine": "^3.1.0",
+    "jasmine-ts": "^0.2.1",
+    "lit-element": "^2.0.1",
+    "loader-utils": "^1.1.0",
+    "memory-fs": "^0.4.1",
+    "schema-utils": "^0.4.5",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.9.2",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "clean-css": "^4.2.1"
+  }
+}

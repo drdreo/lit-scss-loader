@@ -1,0 +1,337 @@
+p{
+    background-color: red;
+}
+
+/*------------------------------------*\
+	rB.css
+	#ROUNDED BOXES
+	@colordef #04517f; dark blue
+	@colordef #e6772b; orange
+	@colordef #223139; dark gray
+	@colordef #88ac4f; green
+\*------------------------------------*/
+
+.rB {
+	border-radius: 5px;
+}
+
+.rB.rB--top {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.rB.rB--bottom {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.rB.rB--left {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.rB.rB--right {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.rB.rB--tL-5,
+.rB.rB--tL-5.tab-panel,
+.rB.rB--tL-5.tab-panel:first-child {
+	border-top-left-radius: 5px;
+}
+
+.R1 {
+	border-radius: 1px;
+}
+
+.R2 {
+	border-radius: 2px;
+}
+
+.R3 {
+	border-radius: 3px;
+}
+
+.R4 {
+	border-radius: 4px;
+}
+
+.R5 {
+	border-radius: 5px;
+}
+
+/*------------------------------------*\
+	#BOX SHADOWS
+\*------------------------------------*/
+
+.S22G {
+	box-shadow: 0 0 2px 2px rgba(35, 49, 57, 0.05);
+}
+
+.S23G {
+	box-shadow: 0 0 2px 2px #c6cbcd;
+}
+
+
+/*------------------------------------*\
+	#TRANSPARENT
+\*------------------------------------*/
+
+.imagePromotionBox .textBox:hover,
+.cab:hover {
+	border: 0;
+}
+
+
+/*------------------------------------*\
+	#WHITE
+\*------------------------------------*/
+
+.O1FF {
+	border: 1px solid #fff;
+}
+
+.O2FF {
+	border: 2px solid #fff;
+}
+
+.O3FF {
+	border: 3px solid #fff;
+}
+
+
+/*------------------------------------*\
+	#GREY LIGHT
+\*------------------------------------*/
+
+.O1GG {
+	border: 1px solid #6897b2;
+}
+
+
+/*------------------------------------*\
+	#GREY 0
+\*------------------------------------*/
+
+.O10G {
+	border: 1px solid #eff1f2;
+}
+
+
+/*------------------------------------*\
+	#GREY 1
+\*------------------------------------*/
+
+.O11G {
+	border: 1px solid #d7dadb;
+}
+
+.O21G {
+	border: 2px solid #d7dadb;
+}
+
+.O31G {
+	border: 3px solid #d7dadb;
+}
+
+
+/*------------------------------------*\
+	#GREY 2
+\*------------------------------------*/
+
+.O12G {
+	border: 1px solid #cfd2d4;
+}
+
+.O22G {
+	border: 2px solid #cfd2d4;
+}
+
+.O32G {
+	border: 3px solid #cfd2d4;
+}
+
+
+/*------------------------------------*\
+	#GREY 3
+\*------------------------------------*/
+
+.O13G {
+	border: 1px solid #c6cbcd;
+}
+
+.promotionTextBox:hover {
+	border: 2px solid #c6cbcd;
+}
+
+.O33G.s-active,
+.O33G.showHover:hover {
+	background: #fff;
+}
+
+.O33G {
+	border: 3px solid #c6cbcd;
+}
+
+
+/*------------------------------------*\
+	#GREY 4
+\*------------------------------------*/
+
+.O24G {
+	border: 2px solid #c0c6c9;
+}
+
+
+/*------------------------------------*\
+	#GREY 5
+\*------------------------------------*/
+
+.O15G,
+.paymentSurvey table tr.ods-odd td .O15G,
+.paymentSurvey table .ins-active:hover td .O15G,
+.s-emphasized .O15G,
+.s-inactive .pib.rB,
+.s-inactive .pib.rB:hover,
+.ods-odd .O15G .paymentSurvey tr:hover td.payment .O15G,
+.gameInfoBox:hover .flashBox {
+	border: 1px solid #bdc3c7;
+}
+
+
+/*------------------------------------*\
+	#GREY 6
+\*------------------------------------*/
+
+.O16G {
+	border: 1px solid #bdbfbf;
+}
+
+.paymentSurvey table tr:hover td .O15G,
+.lastPayment table tr:hover td .O15G,
+.h-bgTo-04517f:hover .rB .O15G {
+	border: 1px solid #bdbfbf;
+}
+
+.O3G,
+.frm.rB.s-inactive.O3G {
+	border: 3px solid #c6cbcd;
+}
+
+
+/*------------------------------------*\
+	#LIGHT BLUE
+\*------------------------------------*/
+
+.O1LB {
+	border: 1px solid #82a8bf;
+}
+
+.O2LB {
+	border: 2px solid #82a8bf;
+}
+
+.O3LB {
+	border: 3px solid #82a8bf;
+}
+
+
+/*------------------------------------*\
+	#BLUE
+\*------------------------------------*/
+
+.O1BL {
+	border: 1px solid #04517f;
+}
+
+.O3BL {
+	border: 3px solid #04517f;
+}
+
+
+/*------------------------------------*\
+	#BLUE-GREY
+\*------------------------------------*/
+
+.O2BG {
+	border: 2px solid #223139;
+}
+
+
+/*------------------------------------*\
+	#GREEN OR HIGHLIGHT COLOR
+\*------------------------------------*/
+
+.O1OR2,
+.O1GR2 {
+	border: 1px solid #a1cb54;
+}
+
+.O3OR,
+.O3GR {
+	border: 3px solid #a1cb54;
+}
+
+.cab:hover,
+.evc:not(.evc--esports):hover,
+.rB.lie.s-selected,
+.liveBets .event:hover,
+.liveBetsMainContainer .liveBets .liveBetsEventSelected,
+.O15G.hasFocus,
+.O1GR,
+.O1GR.cab-textBox:hover,
+.O1GR.cab:hover,
+.O1GR.cab:hover,
+.O1GR.hasFocus,
+.O1OR,
+.O1OR.cab-textBox:hover,
+.O1OR.cab:hover,
+.O1OR.cab:hover,
+.O1OR.evc:hover .O1OR.hasFocus,
+.pib.rB:hover,
+.quotesRow:hover,
+.rB:hover.h-borderTo-88ac4f,
+.rB:hover.h-borderTo-88ac4f,
+.sportSite .upcoming .event:hover,
+.sportSite .upcoming .liveBetsEventSelected,
+.startLayout .upcoming .event:hover,
+.teaserBox .payment:hover,
+.lch-promo:hover,
+.rB.lie:hover {
+	border: 1px solid #a1cb54;
+}
+
+
+/*------------------------------------*\
+	#PARTIAL BORDERS
+\*------------------------------------*/
+
+.rB.no-top {
+	border-top: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.rB.no-bottom {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom: none;
+}
+
+
+/*------------------------------------*\
+	#TEXT INPUT
+\*------------------------------------*/
+
+.textInputContainer,
+td.input .positioningWrapper > .rB,
+td.input > .rB {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+}
+
+.menuList .textInputContainer {
+	margin-right: 6px;
+}
