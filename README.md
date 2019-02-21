@@ -18,7 +18,7 @@ A loader for webpack that lets you import the CSS/SCSS into your lit-element and
 
 # Install:
 ```
-npm install save-dev lit-scss-loader extract-loader
+npm i -D lit-scss-loader extract-loader
 ```
 
 
