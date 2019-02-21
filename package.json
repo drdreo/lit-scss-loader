@@ -12,7 +12,8 @@
   "main": "dist/lit-scss-loader.js",
   "scripts": {
     "test": "jasmine-ts \"./tests/**/*.spec.ts\" ",
-    "build": "webpack"
+    "build": "webpack",
+    "prepublish": "npm run test && npm run build"
   },
   "keywords": [
     "lit",
