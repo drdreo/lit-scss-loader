@@ -10,7 +10,7 @@
 </div>
 
 <blockquote>
-It is a fork of [polymer-css-loader](https://github.com/superjose/polymer-css-loader)! But since the loader was only developed for polymer. I adopted it for lit-element. This is still a work in progress. While this may have worked well on my windows machine, there may still be unforeseen bugs and the API may change in the future.
+It is a fork of <a href="https://github.com/superjose/polymer-css-loader">polymer-css-loader</a>! But since the loader was only developed for polymer. I adopted it for lit-element. This is still a work in progress. While this may have worked well on my windows machine, there may still be unforeseen bugs and the API may change in the future.
 </blockquote>
 
 # lit-scss-loader
