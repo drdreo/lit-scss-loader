@@ -24,8 +24,7 @@ npm i -D lit-scss-loader extract-loader
 
 ## Requirements
 * LitElement
-* Webpack 4
-* extract-loader
+* Webpack 4 ('extract-loader', 'css-loader', 'sass-loader')
 
 # How this works:
 1. Include it in your Webpack Config. Include it "last" or after all the loaders. You will need to use extract-loader if you're using sass-loader, less-loader and/or css-loader
