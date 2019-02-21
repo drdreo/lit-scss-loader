@@ -1,7 +1,14 @@
 {
   "name": "lit-scss-loader",
-  "version": "0.0.1",
-  "description": "Automatically generate the JavaScript style that is required for LitElement, simply by importing the CSS/SCSS file",
+  "author": "Andreas Hahn",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "Automatically generate the style-wrapper that is required for LitElement, simply by importing the CSS/SCSS file",
+  "homepage": "https://github.com/drdreo/lit-scss-loader",
+  "repository": "https://github.com/drdreo/lit-scss-loader",
+  "bugs": {
+    "url": "https://github.com/drdreo/lit-scss-loader/issues"
+  },
   "main": "index.js",
   "scripts": {
     "test": "jasmine-ts \"./tests/**/*.spec.ts\" ",
@@ -9,18 +16,13 @@
   },
   "keywords": [
     "lit",
+    "lit-element",
     "webcomponents",
     "scss",
     "webpack",
     "loader",
     "automatic"
   ],
-  "author": "Andreas Hahn",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/drdreo/lit-scss-loader/issues"
-  },
-  "homepage": "https://github.com/drdreo/lit-scss-loader#readme",
   "devDependencies": {
     "@types/jasmine": "^2.8.8",
     "@types/node": "^10.5.2",
@@ -41,6 +43,7 @@
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
-    "clean-css": "^4.2.1"
+    "clean-css": "^4.2.1",
+    "json5": "^2.1.0"
   }
 }
