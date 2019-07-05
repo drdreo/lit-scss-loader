@@ -118,6 +118,8 @@ import './style-1.css?skip';
 # Need an example? 
 Navigate to [test-app](./test-app), and execute: `npm start`. It will launch an express server @ localhost:3000. Then, run `webpack`. (Remember to have webpack-cli installed)
 
+# Legacy Support
+The loader automatically injects code (e.g. `import {css} from 'lit-element';`) into your files, therefore, pay attention if you need es5 / legacy browsers support. As [LambyPants](https://github.com/drdreo/lit-scss-loader/issues/3) mentioned, you might have to adopt your loaders configuration to also test for ```/\.js$|\.ts$|\.s(c|a)ss$/``` and transform it to your needed language support.
 
 # Why this loader
 When using css for components inline or inside of a javascript file we will loose autocompletion or any analysis tools that are already out there for plain CSS/SCSS files. Also, designer may don't want to work inside .js files. Let them work with what they are used to.
