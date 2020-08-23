@@ -26,7 +26,7 @@ class LitApp extends LitElement {
       😉😉😉😉😉
       </div>
       <div id="he">
-        Poop
+        Foobar
       </div>
     `;
   }

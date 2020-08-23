@@ -2,7 +2,7 @@
   "name": "lit-scss-loader",
   "author": "Andreas Hahn",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically generate the style-wrapper that is required for LitElement, simply by importing the CSS/SCSS file",
   "homepage": "https://github.com/drdreo/lit-scss-loader",
   "repository": "https://github.com/drdreo/lit-scss-loader",
@@ -41,12 +41,12 @@
     "ts-node": "^7.0.0",
     "typescript": "^2.9.2",
     "webpack": "^4.15.1",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "clean-css": "^4.2.1"
   },
   "peerDependencies": {
-    "webpack":"^4.29.5"
+    "webpack": "^4.29.5"
   }
 }
