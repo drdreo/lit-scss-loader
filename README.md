@@ -94,6 +94,21 @@ static get template() {
 }
 ```
 
+### Typescript
+
+If you're using this loader in a Typescript project, you will also need to inform the compiler that it has the ability to load CSS/SCSS files.  This project already provides the module declarations, so all you need to do is include the type declaration file in your `tsconfig.json` file.
+
+```json
+{
+  "compilerOptions": {
+    "...": "...."
+  },
+  "include": [
+    "node_modules/lit-scss-loader/types.d.ts"
+  ]
+}
+```
+
 # Options
 
 |Name|Type|Default|Description|
