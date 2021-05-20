@@ -13,6 +13,7 @@
   "scripts": {
     "test": "jasmine-ts \"./tests/**/*.spec.ts\" ",
     "build": "webpack",
+    "preversion": "npm run test",
     "prepublish": "npm run test && npm run build"
   },
   "keywords": [
