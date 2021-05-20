@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 
 import Style1 from './style-1.scss';
 import Style2 from './style-2.scss';
@@ -22,7 +22,7 @@ class LitTestComponent extends LitElement {
   static get styles() {
 		return [Style1, Style2];
   }
-  
+
   render() {
     return html`
 
@@ -31,7 +31,7 @@ class LitTestComponent extends LitElement {
       <div id="test">This font size should be bigger</div>
     `;
   }
-  
+
 }
 
 window.customElements.define('lit-test-component', LitTestComponent);

@@ -34,7 +34,7 @@
     "eslint-plugin-react": "7.9.1",
     "jasmine": "^3.1.0",
     "jasmine-ts": "^0.2.1",
-    "lit-element": "^2.0.1",
+    "lit": "^2.0.0-rc.2",
     "loader-utils": "^1.1.0",
     "memory-fs": "^0.4.1",
     "schema-utils": "^0.4.5",

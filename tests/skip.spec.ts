@@ -3,13 +3,13 @@ import { skip, include } from '../src/skipParser';
 
 /**
  * Tests for
- * - Skipping a certain file. 
+ * - Skipping a certain file.
  * - Skipping all the files.
  * - Including a certain file.
 */
 
 describe('Skip Parser', async () => {
-  
+
   let output;
 
   it('Should skip style.css', async() => {
@@ -32,14 +32,14 @@ describe('Skip Parser', async () => {
   it('Should include style.css even with defaultSkip on', async() => {
     const stats = await compiler('test.css?include', { defaultSkip: true});
     output = "\`" + stats.toJson().modules[0].modules[0].source.trim().replace(/\`/g, "\\`") + "\`";
-    
+
     const hasContent = output.includes("background-color: #000000;");
     expect(hasContent).toBe(true);
 
     const hasExport = output.includes('export default');
     expect(hasExport).toBe(true);
 
-    const importString = "import {css} from 'lit-element";
+    const importString = "import {css} from 'lit";
     expect(output.includes(importString)).toBe(true);
   });
 
@@ -54,7 +54,7 @@ describe('Skip Parser', async () => {
     expect(parseResult2).toBe(true);
   });
 
-  
+
   it('Should not match ?skip', () => {
     const query = '?skipping&skipper';
     const parseResult = skip(query);
@@ -64,7 +64,7 @@ describe('Skip Parser', async () => {
    it('Should match ?include', () => {
     const query = '?include&somethingelsetoskippit';
     const query2 = '?name&include'
-    
+
     const parseResult = include(query);
     const parseResult2 = include(query2);
 

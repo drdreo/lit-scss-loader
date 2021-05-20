@@ -49,7 +49,7 @@ module.exports = {
 ```
 2. Include your .css or .scss or .less file in your JavaScript:
 ```javascript
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 
 import Style1 from './style-1.scss';
 import Style2 from './style-2.css';
@@ -72,7 +72,7 @@ class LitTestComponent extends LitElement {
   static get styles() {
 		return [Style1, Style2];
   }
-  
+
   render() {
     return html`
       <p>This is the test component</p>
@@ -118,7 +118,7 @@ If you're using this loader in a Typescript project, you will also need to infor
 
 # Files Parameters
 These are appended at the end of the CSS imports in your JavaScript file (Where the component is declared);
-E.g: 
+E.g:
 
 ```javascript
 import './style-2.css?name=maria';
@@ -134,7 +134,7 @@ import './style-1.css?skip';
 Build lit-scss-loader with `npm run build`, then navigate to [test-app](./test-app) and execute: `npm start`. It will launch an express server @ localhost:3000. Then, run `webpack`. (Remember to have webpack-cli installed)
 
 # Legacy Support
-The loader automatically injects code (e.g. `import {css} from 'lit-element';`) into your files, therefore, pay attention if you need es5 / legacy browsers support. As [LambyPants](https://github.com/drdreo/lit-scss-loader/issues/3) mentioned, you might have to adopt your loaders configuration to also test for ```/\.js$|\.ts$|\.s(c|a)ss$/``` and transform it to your needed language support.
+The loader automatically injects code (e.g. `import {css} from 'lit';`) into your files, therefore, pay attention if you need es5 / legacy browsers support. As [LambyPants](https://github.com/drdreo/lit-scss-loader/issues/3) mentioned, you might have to adopt your loaders configuration to also test for ```/\.js$|\.ts$|\.s(c|a)ss$/``` and transform it to your needed language support.
 
 # Why this loader
 When using css for components inline or inside of a javascript file we will loose autocompletion or any analysis tools that are already out there for plain CSS/SCSS files. Also, designer may don't want to work inside .js files. Let them work with what they are used to.
