@@ -1,4 +1,4 @@
-import { html, LitElement } from 'lit-element';
+import { html, LitElement } from 'lit';
 
 import LitAppStyles from './lit-app-styles.scss';
 
@@ -22,7 +22,7 @@ class LitApp extends LitElement {
       <h2>Hello ${this.prop1}!</h2>
       <input type="text" value="${this.prop1}" @change="${(e) => this.prop1 = e.target.value}" />
       <div>
-      This is lit-app.js   
+      This is lit-app.js
       😉😉😉😉😉
       </div>
       <div id="he">
