@@ -12,26 +12,22 @@ describe('Skip Parser', async () => {
 
   let output;
 
-  it('Should skip style.css', async() => {
-    const stats = await compiler('test.css?skip');
-
-    output = "\`" + stats.toJson().modules[0].source.trim().replace(/\`/g, "\\`") + "\`";
+  it('should skip style.scss', async() => {
+    output = await compiler('test.scss?skip');
 
     const hasExport = output.includes('export');
     expect(hasExport).toBe(false);
   });
 
-  it('Should skip style.css with defaultSkip on', async() => {
-    const stats = await compiler('test.css', { defaultSkip: true});
-    output = "\`" + stats.toJson().modules[0].source.trim().replace(/\`/g, "\\`") + "\`";
+  it('should skip style.css with defaultSkip on', async() => {
+    output = await compiler('test.css', { defaultSkip: true});
 
     const hasExport = output.includes('export');
     expect(hasExport).toBe(false);
   });
 
-  it('Should include style.css even with defaultSkip on', async() => {
-    const stats = await compiler('test.css?include', { defaultSkip: true});
-    output = "\`" + stats.toJson().modules[0].modules[0].source.trim().replace(/\`/g, "\\`") + "\`";
+  it('should include style.css even with defaultSkip on', async() => {
+    output = await compiler('test.css?include', { defaultSkip: true});
 
     const hasContent = output.includes("background-color: #000000;");
     expect(hasContent).toBe(true);
@@ -43,8 +39,8 @@ describe('Skip Parser', async () => {
     expect(output.includes(importString)).toBe(true);
   });
 
-  it('Should match ?skip', () => {
-    const query = '?skip&somethingelsetoskippit';
+  it('should match ?skip', () => {
+    const query = '?skip&somethingelsetoskipit';
     const query2 = '?name&skip'
 
     const parseResult = skip(query);
@@ -55,13 +51,13 @@ describe('Skip Parser', async () => {
   });
 
 
-  it('Should not match ?skip', () => {
+  it('should not match ?skip', () => {
     const query = '?skipping&skipper';
     const parseResult = skip(query);
     expect(parseResult).toBe(false);
   });
 
-   it('Should match ?include', () => {
+   it('should match ?include', () => {
     const query = '?include&somethingelsetoskippit';
     const query2 = '?name&include'
 

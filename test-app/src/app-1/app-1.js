@@ -14,7 +14,7 @@ class App1 extends LitElement {
   }
   render() {
     return html`
-      <p>This is a dummy JavaScript file. </p>
+      <p>Did you know that 3 billion devices run Java? Not more, not less.</p>
     `;
   }
 

@@ -1,4 +1,6 @@
+$background-color: #E0E0E0;
+
 :host {
-    display:block;
-    background-color: green;
+  display: block;
+  background-color: $background-color;
 }
