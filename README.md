@@ -130,8 +130,8 @@ import './style-1.css?skip';
 |**[`skip`](#minify)**|`{boolean}`|`N/A`|Setting this parameter will skip the import altogether. This may be useful if you're using React and Lit or you'd like to include the CSS without. E.g: `import './style-2.css?skip'`
 |**[`include`](#minify)**|`{boolean}`|`N/A`|Just setting this parameter will include the css even when defaultSkip is on. This may be useful if you just want to "litify" or "web-componentize" a .css/.scss/.less file. E.g:  `import './style-2.css?include'`. **Note**: `include` will take preference over `skip`.
 
-# Need an example?
-Navigate to [test-app](./test-app), and execute: `npm start`. It will launch an express server @ localhost:3000. Then, run `webpack`. (Remember to have webpack-cli installed)
+# Need an example? 
+Build lit-scss-loader with `npm run build`, then navigate to [test-app](./test-app) and execute: `npm start`. It will launch an express server @ localhost:3000. Then, run `webpack`. (Remember to have webpack-cli installed)
 
 # Legacy Support
 The loader automatically injects code (e.g. `import {css} from 'lit';`) into your files, therefore, pay attention if you need es5 / legacy browsers support. As [LambyPants](https://github.com/drdreo/lit-scss-loader/issues/3) mentioned, you might have to adopt your loaders configuration to also test for ```/\.js$|\.ts$|\.s(c|a)ss$/``` and transform it to your needed language support.
