@@ -10,13 +10,17 @@
 </div>
 
 <blockquote>
-It is a fork of <a href="https://github.com/superjose/polymer-css-loader">polymer-css-loader</a>! But since the loader was only developed for polymer, I adopted it for lit-element, now <a href="https://lit.dev/">lit</a>. This is still a work in progress. While this may have worked well on my windows machine, there may still be unforeseen bugs and the API may change in the future.
+It is a fork of <a href="https://github.com/superjose/polymer-css-loader">polymer-css-loader</a>! But since the loader was only developed for polymer, I adopted it for lit-element, now <a href="https://lit.dev/">lit</a>.
 </blockquote>
 
 # lit-scss-loader
 
 A loader for webpack that lets you import the CSS/SCSS into your lit-element and automatically creates the styling
 JavaScript for you.
+
+<blockquote>
+While this loader has worked well on my Windows machine, there may still be unforeseen bugs. Even though I put the package to v1.0 be cautious when using it in production.
+</blockquote>
 
 ## Install:
 
@@ -121,26 +125,25 @@ declaration file in your `tsconfig.json` file.
 
 # Options
 
-|Name|Type|Default|Description| |:--:|:--:|:-----:|:----------| |**[`minify`](#minify)**|`{Boolean}`|`false`|When true,
-it will minify both the CSS and JavaScript output. |~~**[`defaultSkip`](#defaultSkip)**~~|`{Boolean}`|`false`|When true, will
-skip all imports except those explicitly marked.
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|**[`minify`](#minify)**|`{Boolean}`|`false`|When true, it will minify both the CSS and JavaScript output.
+|~~**[`defaultSkip`](#minify)**~~|`{Boolean}`|`false`| (dep.) When true, will skip all imports except those explicilty marked.
 
 # Files Parameters (obsolete)
 _These were applicable when using Polymer 3. With lit, everything is better._
 
-These are appended at the end of the CSS imports in your JavaScript file (Where the component is declared); E.g:
+They are appended at the end of the CSS imports in your JavaScript file (Where the component is declared); E.g:
 
 ```javascript
 import './style-2.css?include';
 import './style-1.css?skip';
 ```
 
-|Name|Type|Default|Description| |:--:|:--:|:-----:|:----------| 
-|**[`skip`](#minify)**|`{boolean}`|`N/A`|Setting this parameter will skip the import altogether. This may be useful if you're using React and Lit or you'd like to include the
-CSS without. E.g: `import './style-2.css?skip'`
-|**[`include`](#minify)**|`{boolean}`|`N/A`|Just setting this parameter will include the css even when defaultSkip is
-on. This may be useful if you just want to "litify" or "web-componentize" a .css/.scss/.less file.
-E.g:  `import './style-2.css?include'`. **Note**: `include` will take preference over `skip`.
+| Name | Type | Default | Description |
+|------|------|---------|-------------|
+|**[`skip`](#minify)**| `{boolean}`| `N/A` |Setting this parameter will skip the import altogether. This may be useful if you're using React and Lit or you'd like to include the CSS without. E.g: `import './style-2.css?skip'` |
+|**[`include`](#minify)** | `{boolean}` | `N/A` | Just setting this parameter will include the css even when defaultSkip is on. This may be useful if you just want to "litify" or "web-componentize" a .css/.scss/.less file. E.g:  `import './style-2.css?include'`. **Note**: `include` will take preference over `skip`. |
 
 # Need an example?
 
@@ -154,7 +157,7 @@ need es5 / legacy browsers support. As [LambyPants](https://github.com/drdreo/li
 might have to adopt your loaders configuration to also test for ```/\.js$|\.ts$|\.s(c|a)ss$/``` and transform it to your
 needed language support.
 
-# Why this loader
+# Why this loader?
 
 When using css for components inline or inside a javascript file we will lose auto-completion or any analysis tools
 that are already out there for plain CSS/SCSS files. Also, designer may don't want to work inside .js files. Let them
