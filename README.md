@@ -35,7 +35,7 @@ npm i -D lit-scss-loader extract-loader
 
 # How this works:
 
-1. Include it in your Webpack Config. Include it "last" or after all the loaders. You will need to use extract-loader if
+1. Include it in your Webpack Config. Include it "last" _(webpack loader order!)_ or after all other loaders have been applied. You will need to use extract-loader if
    you're using sass-loader, less-loader and/or css-loader
 
 ```javascript
@@ -94,16 +94,6 @@ class LitTestComponent extends LitElement {
 }
 
 customElements.define('lit-test-component', LitTestComponent);
-```
-
-3. Use the base name of the file as the name for `<style include="">`. Example, if you imported a filename called
-   my-polymer-3.scss, you'd do it like this:
-
-```javascript
-render()
-{
-    <style include="my-polymer-3"></style>
-}
 ```
 
 ### Typescript
