@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "css-loader": "6.7.1",
-    "eslint": "4.19.1",
+    "eslint": "8.26.0",
     "express": "^4.16.3",
     "extract-loader": "5.1.0",
     "html-loader": "4.2.0",
