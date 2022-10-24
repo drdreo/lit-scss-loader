@@ -11,7 +11,7 @@
   },
   "main": "dist/lit-scss-loader.js",
   "scripts": {
-    "test": "jasmine-ts \"./tests/**/*.spec.ts\" ",
+    "test": "jest",
     "build": "webpack",
     "preversion": "npm run test",
     "prepublish": "npm run test && npm run build"
@@ -26,21 +26,20 @@
     "automatic"
   ],
   "devDependencies": {
-    "@types/jasmine": "^2.8.8",
-    "@types/node": "^10.5.2",
+    "@types/jest": "^29.2.0",
+    "@types/node": "16.11.7",
     "eslint": "4.19.1",
     "eslint-config-airbnb": "17.0.0",
     "eslint-plugin-import": "2.12.0",
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.9.1",
-    "jasmine": "^3.1.0",
-    "jasmine-ts": "^0.2.1",
-    "lit": "^2.0.0-rc.2",
+    "lit": "2.4.0",
     "loader-utils": "^1.1.0",
     "memory-fs": "^0.5.0",
     "schema-utils": "^0.4.5",
-    "ts-node": "^7.0.0",
-    "typescript": "^2.9.2",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^8.10.2",
+    "typescript": "4.8.4",
     "webpack": "5.37.1",
     "webpack-cli": "^4.7.0"
   },

@@ -8,14 +8,14 @@ import compiler from './compiler';
  * content.
  */
 
-describe('The Loader', async () => {
+describe('The Loader', () => {
 
 	let output;
 	let outputMin;
 
 	beforeAll(async () => {
-        output = await compiler('test.css');
-        outputMin = await compiler('test.css', { minify: true });
+		output = await compiler('test.css');
+		outputMin = await compiler('test.css', { minify: true });
 
 		// strange string comparison due to template literals inside template literals
 		// output =
