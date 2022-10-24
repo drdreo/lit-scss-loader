@@ -2,23 +2,22 @@
   "name": "test-app",
   "author": "Andreas Hahn",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "This is a test app that showcases how the webpack loader works",
   "scripts": {
     "start": "npm run build && node server.js",
     "build": "webpack"
   },
   "dependencies": {
-    "css-loader": "^6.7.1",
+    "css-loader": "6.7.1",
     "eslint": "4.19.1",
     "express": "^4.16.3",
-    "extract-loader": "^2.0.1",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^5.3.1",
-    "lit": "^2.0.0-rc.2",
-    "style-loader": "^0.21.0",
-    "uglifyjs-webpack-plugin": "^2.1.1",
-    "webpack-cli": "^3.3.12"
+    "extract-loader": "5.1.0",
+    "html-loader": "4.2.0",
+    "html-webpack-plugin": "5.5.0",
+    "lit": "2.4.0",
+    "style-loader": "3.3.1",
+    "webpack-cli": "4.10.0"
   },
   "devDependencies": {
     "sass": "^1.32.13",

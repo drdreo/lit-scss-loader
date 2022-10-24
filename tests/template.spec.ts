@@ -6,11 +6,11 @@ import * as generateTemplate from '../src/templateGenerator';
 
 describe('Template Generator', () => {
 
-    let template;
-    let parsedFileContents;
+	let template;
+	let parsedFileContents;
 
-    beforeAll(() => {
-        parsedFileContents = `
+	beforeAll(() => {
+		parsedFileContents = `
             div {
                 /* Testing out CSS */
                 background-color: magenta;
@@ -18,17 +18,16 @@ describe('Template Generator', () => {
             }
         `;
 
-        template = generateTemplate(parsedFileContents);
-    });
+		template = generateTemplate(parsedFileContents);
+	});
 
-    it('Should generate the template', () => {
-        expect(template).not.toBeUndefined();
-        expect(template).not.toBeNull();
-    });
+	it('Should generate the template', () => {
+		expect(template).not.toBeUndefined();
+		expect(template).not.toBeNull();
+	});
 
-    it('Should have injected the parsedFileContents', () => {
-        expect(template.indexOf(parsedFileContents)).not.toBe(-1);
-    })
-
+	it('Should have injected the parsedFileContents', () => {
+		expect(template.indexOf(parsedFileContents)).not.toBe(-1);
+	})
 })
 

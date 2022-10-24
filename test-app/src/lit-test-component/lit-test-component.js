@@ -26,8 +26,8 @@ class LitTestComponent extends LitElement {
     render() {
         return html`
             <div class="section">
-                <p>This is the test component</p>
-                <p>This is the propertie's value: ${this.prop1} </p>
+                <p>This is the lit-test-component</p>
+                <p>This is the property's value: ${this.prop1} </p>
                 <div id="test">This font size should be bigger</div>
             </div>
         `;
