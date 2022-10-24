@@ -2,7 +2,7 @@
   "name": "lit-scss-loader",
   "author": "Andreas Hahn",
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Automatically generate the style-wrapper that is required for LitElement, simply by importing the CSS/SCSS file",
   "homepage": "https://github.com/drdreo/lit-scss-loader",
   "repository": "https://github.com/drdreo/lit-scss-loader",
