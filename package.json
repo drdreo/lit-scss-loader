@@ -34,7 +34,7 @@
     "eslint-plugin-jsx-a11y": "6.0.3",
     "eslint-plugin-react": "7.9.1",
     "lit": "2.4.0",
-    "loader-utils": "^1.1.0",
+    "loader-utils": "^3.2.1",
     "memory-fs": "^0.5.0",
     "schema-utils": "^0.4.5",
     "ts-jest": "^29.0.3",
