@@ -2,3 +2,4 @@ node_modules
 test-app/node_modules
 dist
 .idea
+.pnpm-lock.yaml
